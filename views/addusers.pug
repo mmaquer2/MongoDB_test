@@ -1,0 +1,19 @@
+doctype html
+html
+    head
+        title "title name here"
+    body
+        header
+            h1 #{ title }
+        main
+            form(method = 'post', action ='/')
+                #form-group
+                label Title:
+                input.form-control(name = "title", type = 'text')
+                #form-group
+                label Body:
+                textarea.form-control(name = 'body')
+            input.btn.btn-primary(type = 'submit', value = 'Submit')
+        footer
+            p created by mike maquera, 2019. 
+
